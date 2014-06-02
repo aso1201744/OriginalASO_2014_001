@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 //import android.widget.EditText;
 
 
@@ -32,8 +33,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		// TODO 自動生成されたメソッド・スタブ
 		switch(v.getId()){
 			case R.id.btnOK:
-				//EditText etv = (EditText)findViewById(R.id.edtName);
-				//String inputVgl = etv.getText().toString();
+				EditText etv = (EditText)findViewById(R.id.edtName);
+				String inputMsg = etv.getText().toString();
 
 				Random rnd = new Random();
 
@@ -45,25 +46,26 @@ public class MainActivity extends Activity implements View.OnClickListener{
 					case 0:
 
 						intent = new Intent(MainActivity.this,VglActivity.class);
-						startActivity(intent);
+
 						break;
 					case 1:
 
 						intent = new Intent(MainActivity.this,GlActivity.class);
-						startActivity(intent);
+
 						break;
 					case 2:
 
 						intent = new Intent(MainActivity.this,LuckActivity.class);
-						startActivity(intent);
+
 						break;
 					case 3:
 
 						intent = new Intent(MainActivity.this,BlActivity.class);
-						startActivity(intent);
+
 						break;
 				}
-
+				intent.putExtra("name", inputMsg);
+				startActivity(intent);
 		}
 	}
 
