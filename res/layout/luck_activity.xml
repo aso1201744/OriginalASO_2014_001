@@ -23,13 +23,12 @@
         android:text="吉" />
 
     <TextView
-        android:id="@+id/txvMsg4"
+        android:id="@+id/txvMsg13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView1"
-        android:layout_alignRight="@+id/imageView1"
-        android:layout_marginBottom="48dp"
-        android:layout_marginRight="14dp"
-        android:text="今日の運勢は…" />
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="98dp"
+        android:text="今日の運勢は・・・" />
 
 </RelativeLayout>

@@ -26,13 +26,12 @@
         android:text="中吉" />
 
     <TextView
-        android:id="@+id/txvMsg2"
+        android:id="@+id/txvMsg12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView1"
-        android:layout_alignLeft="@+id/imageView1"
-        android:layout_marginBottom="46dp"
-        android:layout_marginLeft="42dp"
-        android:text="今日の運勢は…" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="74dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="今日の運勢は・・・" />
 
 </RelativeLayout>

@@ -17,7 +17,7 @@ public class LuckActivity extends Activity {
 		String name = intent.getStringExtra("name");
 
 
-		TextView tv = (TextView)findViewById(R.id.txvMsg4);
+		TextView tv = (TextView)findViewById(R.id.txvMsg13);
 		tv.setText(name + "さんの今日の運命は…");
 
 

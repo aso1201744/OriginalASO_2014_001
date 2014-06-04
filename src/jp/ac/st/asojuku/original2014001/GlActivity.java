@@ -17,7 +17,7 @@ public class GlActivity extends Activity {
 		String name = intent.getStringExtra("name");
 
 
-		TextView tv = (TextView)findViewById(R.id.txvMsg4);
+		TextView tv = (TextView)findViewById(R.id.txvMsg12);
 		tv.setText(name + "さんの今日の運命は…");
 
 
